@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after
+{
+    margin: 0; border: 0; outline: 0;
+    background: url('/images/10409479_10154286115535644_1811298032718541836_n.jpg') 50% 50% no-repeat;
+    border-radius: 2px;
+    cursor: not-allowed;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+html,
+body
+{
+    height: 100%;
+    overflow: hidden;
+    background-repeat: repeat;
+}
+
+.special-thanks-to-my-guy-shaun-kardinal * { visibility: hidden; }
+
+.oubliette,
+.oubliette > .v
+{
+    /*
+        Center Stage
+     */
+    display: block;
+    position: fixed;
+    top: 50%; left: 50%;
+
+    height: 640px; width: 640px;
+    margin: -320px 0 0 -320px;
+    cursor: pointer;
+}
+
+.oubliette:active
+{
+    cursor:none;
+}
+
+.oubliette:after,
+.oubliette:before
+{
+    /*
+        Glass with Mask
+     */
+    content: '';
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    opacity: 1;
+    z-index: 696969;
+}
+
+.oubliette:before
+{
+    opacity: 0.08675309;
+    background: url('/images/screen.gif');
+}
+
+.v
+{
+    opacity: 0;
+
+    -webkit-filter: blur(1px);
+       -moz-filter: blur(1px);
+         -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+            filter: blur(1px);
+}
+
+.is_playing
+{
+    opacity: 1;
+    z-index: 58008;
+}
+
+.is_playing:before
+{
+
+}
+.is_playing:after
+{
+    opacity: 1;
+}
+
+.sleep > *
+{
+    opacity: 0;
+    cursor: not-allowed;
+}
+
+.sleep:before
+{
+    opacity: 0;
+}
+.sleep:after
+{
+    box-shadow: 0 0 16px rgb(255,255,255);
+}
